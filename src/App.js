@@ -2,11 +2,15 @@ import React from "react";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 import MainPage from "./MainPage/MainPage";
-
+import Social1 from "./Social1/Social1";
+import Aggregator from "./Aggregator/Aggregator"
+import Header from "./Header/Header"
 function App() {
   return (
     <div>
-      <MainPage />
+      <Header />
+       <Aggregator />
+       <Social1 />
     </div>
   );
 
