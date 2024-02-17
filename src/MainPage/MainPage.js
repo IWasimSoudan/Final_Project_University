@@ -1,9 +1,12 @@
+import Aggregator from "../Aggregator/Aggregator";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer"
 const MainPage = () => {
   return (
     <>
-    <main className=" pt-5  mdb-docs-layout">
-      <h1>This is main Page</h1>
-      </main>
+      <Navbar />
+      <Aggregator />
+      <Footer />
     </>
   );
 };

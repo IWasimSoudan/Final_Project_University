@@ -7,7 +7,7 @@ const Header = () => {
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <div className="test">
-            <img src="logo.png" />
+              <img src="logo.png" />
             </div>
           </div>
         </div>
@@ -18,7 +18,7 @@ const Header = () => {
               type="text"
               id="search_field"
               className="form-control"
-              placeholder="Enter Product Name ..."
+              placeholder="Enter news titles ..."
             />
             <div className="input-group-append">
               <button id="search_btn" className="btn">

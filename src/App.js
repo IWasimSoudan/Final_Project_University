@@ -1,16 +1,22 @@
 import React from "react";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
+import singleBlog from "./SingleBlog/singleBlog";
 import MainPage from "./MainPage/MainPage";
+import SingleBlog from "./SingleBlog/singleBlog";
+import Header from "./Header/Header";
 import Social1 from "./Social1/Social1";
-import Aggregator from "./Aggregator/Aggregator"
-import Header from "./Header/Header"
+import Aggregator from "./Aggregator/Aggregator";
+import Blog from "./Blog/Blog";
+import Basic from "./Basic/Basic";
+import MegaMenu from "./MegaMenu/MegaMenu";
+import Navbar from "./Navbar/Navbar";
 function App() {
   return (
     <div>
-      <Header />
-       <Aggregator />
-       <Social1 />
+   {/* <Navbar />
+      <Aggregator /> */}
+   <MainPage />
     </div>
   );
 

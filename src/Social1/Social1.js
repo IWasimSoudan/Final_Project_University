@@ -17,7 +17,7 @@ export default function Social1() {
           <div className="d-flex mb-3">
             <a href="#!">
               <img
-                src="https://mdbcdn.b-cdn.net/img/new/avatars/18.webp"
+                src="test.jpg"
                 className="border rounded-circle me-2"
                 alt="Avatar"
                 style={{ height: "40px" }}
@@ -51,7 +51,7 @@ export default function Social1() {
           rippleColor="light"
         >
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/standard/people/077.webp"
+            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             className="w-100"
           />
           <a href="#!">
@@ -92,7 +92,7 @@ export default function Social1() {
               <MDBIcon fas icon="share" className="me-2" /> Share
             </MDBBtn>
           </div>
-          <div class="d-flex mb-3">
+          {/* <div class="d-flex mb-3">
             <a href="#!">
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/avatars/18.webp"
@@ -107,9 +107,9 @@ export default function Social1() {
               rows={2}
               wrapperClass="w-100"
             />
-          </div>
-          <div className="d-flex mb-3">
-            <a href="#!">
+          </div> */}
+          {/*<div className="d-flex mb-3">
+             <a href="#!">
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
                 className="border rounded-circle me-2"
@@ -227,8 +227,8 @@ export default function Social1() {
               <a href="#!" className="text-muted small me-2">
                 <strong>Reply</strong>
               </a>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </MDBCardBody>
       </MDBCard>
     </MDBContainer>

@@ -427,7 +427,7 @@ export default function NewsFeed() {
               </tr>
             </MDBTableBody>
           </MDBTable>
-          <div className="d-flex justify-content-center">
+          {/* <div className="d-flex justify-content-center">
             <nav className="my-3 pt-2">
               <MDBPagination circle className="mb-0">
                 <MDBPaginationItem>
@@ -461,7 +461,7 @@ export default function NewsFeed() {
                 </MDBPaginationItem>
               </MDBPagination>
             </nav>
-          </div>
+          </div> */}
         </MDBCardBody>
       </MDBCard>
     </MDBContainer>
