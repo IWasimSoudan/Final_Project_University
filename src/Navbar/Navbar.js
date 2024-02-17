@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg sticky-top pt-5 pb-5">
       <div className="container mb-2">
         <a className="navbar-brand" href="#">
-          <img src={require("../assets/img/logo/logo.png")} alt="" />
+          <img src={require("../assets/img/logo/logo2_footer.png")} alt="" />
         </a>
         <button
           className="navbar-toggler"
