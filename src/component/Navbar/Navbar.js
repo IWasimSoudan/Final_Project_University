@@ -3,10 +3,11 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg sticky-top pt-5 pb-5">
+    <nav className="navbar navbar-expand-lg sticky-top pt-35 pb-3">
       <div className="container mb-2">
         <a className="navbar-brand" href="#">
-          <img src={require("../assets/img/logo/logo2_footer.png")} alt="" />
+          {/* <img src={require("../assets/img/logo/logo2_footer.png")} alt="" /> */}
+          <img src={require("../../assets/img/logo/logo2_footer.png")} alt="" />
         </a>
         <button
           className="navbar-toggler"

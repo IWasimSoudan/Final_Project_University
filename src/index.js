@@ -6,12 +6,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Basic from "./Basic/Basic";
+import Basic from "./component/Basic/Basic";
 import Blog from "./Blog/Blog";
 import Aggregator from "./Aggregator/Aggregator";
 import NewsFeed from "./NewsFeed/NewsFeed";
 import Social1 from "./Social1/Social1";
 import Social2 from "./Social2/Social2";
+import SingleBlog from "./SingleBlog/singleBlog";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -27,6 +28,7 @@ root.render(
         <Route path="/NewsFeed" element={<NewsFeed />} />
         <Route path="/Social1" element={<Social1 />} />
         <Route path="/Social2" element={<Social2 />} />
+        <Route path="/SingleBlog" element={<SingleBlog />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

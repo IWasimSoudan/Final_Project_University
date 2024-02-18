@@ -1,5 +1,4 @@
 import "../assets/css/bootstrap.min.css";
-// import "../assets/css/owl.carousel.min.css";
 import "../assets/css/slicknav.css";
 import "../assets/css/animate.min.css";
 import "../assets/css/magnific-popup.css";
@@ -9,20 +8,23 @@ import "../assets/css/slick.css";
 import "../assets/css/nice-select.css";
 import "../assets/css/style.css";
 import "../assets/css/responsive.css";
+import Navbar from "../component/Navbar/Navbar";
+import Footer from "../component/Footer/Footer";
 
 export default function SingleBlog() {
   return (
-    <div>
+    <>
+    <Navbar />
       {/* <!--================Blog Area =================--> */}
       <section className="blog_area single-post-area section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 posts-list">
+            <div className="col-lg-12 posts-list">
               <div className="single-post">
                 <div className="feature-img">
                   <img
                     className="img-fluid"
-                    src = {require ("../assets/img/blog/single_blog_1.png")}
+                    src={require("../assets/img/blog/single_blog_1.png")}
                     alt=""
                   />
                 </div>
@@ -189,7 +191,10 @@ export default function SingleBlog() {
                   <div className="single-comment justify-content-between d-flex">
                     <div className="user justify-content-between d-flex">
                       <div className="thumb">
-                        <img src={require("../assets/img/comment/comment_1.png")} alt="" />
+                        <img
+                          src={require("../assets/img/comment/comment_1.png")}
+                          alt=""
+                        />
                       </div>
                       <div className="desc">
                         <p className="comment">
@@ -205,11 +210,11 @@ export default function SingleBlog() {
                             </h5>
                             <p className="date">December 4, 2017 at 3:12 pm </p>
                           </div>
-                          <div className="reply-btn">
-                            <a href="#" className="btn-reply text-uppercase">
+                          {/* <div className="reply-btn">
+                             <a href="#" className="btn-reply text-uppercase">
                               reply
-                            </a>
-                          </div>
+                            </a> 
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -219,7 +224,10 @@ export default function SingleBlog() {
                   <div className="single-comment justify-content-between d-flex">
                     <div className="user justify-content-between d-flex">
                       <div className="thumb">
-                        <img src={require("../assets/img/comment/comment_2.png")} alt="" />
+                        <img
+                          src={require("../assets/img/comment/comment_2.png")}
+                          alt=""
+                        />
                       </div>
                       <div className="desc">
                         <p className="comment">
@@ -235,11 +243,11 @@ export default function SingleBlog() {
                             </h5>
                             <p className="date">December 4, 2017 at 3:12 pm </p>
                           </div>
-                          <div className="reply-btn">
+                          {/* <div className="reply-btn">
                             <a href="#" className="btn-reply text-uppercase">
                               reply
                             </a>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -249,7 +257,10 @@ export default function SingleBlog() {
                   <div className="single-comment justify-content-between d-flex">
                     <div className="user justify-content-between d-flex">
                       <div className="thumb">
-                        <img src={require("../assets/img/comment/comment_3.png")} alt="" />
+                        <img
+                          src={require("../assets/img/comment/comment_3.png")}
+                          alt=""
+                        />
                       </div>
                       <div className="desc">
                         <p className="comment">
@@ -265,11 +276,11 @@ export default function SingleBlog() {
                             </h5>
                             <p className="date">December 4, 2017 at 3:12 pm </p>
                           </div>
-                          <div className="reply-btn">
+                          {/* <div className="reply-btn">
                             <a href="#" className="btn-reply text-uppercase">
                               reply
                             </a>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -341,7 +352,7 @@ export default function SingleBlog() {
                 </form>
               </div>
             </div>
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div className="blog_right_sidebar">
                 <aside className="single_sidebar_widget search_widget">
                   <form action="#">
@@ -413,7 +424,10 @@ export default function SingleBlog() {
                 <aside className="single_sidebar_widget popular_post_widget">
                   <h3 className="widget_title">Recent Post</h3>
                   <div className="media post_item">
-                    <img src={require("../assets/img/post/post_1.png")} alt="post" />
+                    <img
+                      src={require("../assets/img/post/post_1.png")}
+                      alt="post"
+                    />
                     <div className="media-body">
                       <a href="single-blog.html">
                         <h3>From life was you fish...</h3>
@@ -422,7 +436,10 @@ export default function SingleBlog() {
                     </div>
                   </div>
                   <div className="media post_item">
-                    <img src={require("../assets/img/post/post_2.png")} alt="post" />
+                    <img
+                      src={require("../assets/img/post/post_2.png")}
+                      alt="post"
+                    />
                     <div className="media-body">
                       <a href="single-blog.html">
                         <h3>The Amazing Hubble</h3>
@@ -431,7 +448,10 @@ export default function SingleBlog() {
                     </div>
                   </div>
                   <div className="media post_item">
-                    <img src={require("../assets/img/post/post_3.png")} alt="post" />
+                    <img
+                      src={require("../assets/img/post/post_3.png")}
+                      alt="post"
+                    />
                     <div className="media-body">
                       <a href="single-blog.html">
                         <h3>Astronomy Or Astrology</h3>
@@ -440,7 +460,10 @@ export default function SingleBlog() {
                     </div>
                   </div>
                   <div className="media post_item">
-                    <img src={require("../assets/img/post/post_4.png")} alt="post" />
+                    <img
+                      src={require("../assets/img/post/post_4.png")}
+                      alt="post"
+                    />
                     <div className="media-body">
                       <a href="single-blog.html">
                         <h3>Asteroids telescope</h3>
@@ -559,47 +582,12 @@ export default function SingleBlog() {
                   </form>
                 </aside>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
-      {/* <!--================ Blog Area end =================--> */}
-
-      {/* <!-- JS here --> */}
-
-      {/* <!-- All JS Custom Plugins Link Here here --> */}
-      <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-      <script src="./assets/js/bootstrap.min.js"></script>
-      <script src="./assets/js/popper.min.js"></script>
-      <script src="./assets/js/bootstrap.min.js"></script>
-      {/* <!-- Jquery Mobile Menu --> */}
-      <script src="./assets/js/jquery.slicknav.min.js"></script>
-
-      {/* <!-- Jquery Slick , Owl-Carousel Plugins --> */}
-      <script src="./assets/js/owl.carousel.min.js"></script>
-      <script src="./assets/js/slick.min.js"></script>
-      {/* <!-- Date Picker --> */}
-      <script src="./assets/js/gijgo.min.js"></script>
-      {/* <!-- One Page, Animated-HeadLin --> */}
-      <script src="./assets/js/wow.min.js"></script>
-      <script src="./assets/js/animated.headline.js"></script>
-      <script src="./assets/js/jquery.magnific-popup.js"></script>
-
-      {/* <!-- Scrollup, nice-select, sticky --> */}
-      <script src="./assets/js/jquery.scrollUp.min.js"></script>
-      <script src="./assets/js/jquery.nice-select.min.js"></script>
-      <script src="./assets/js/jquery.sticky.js"></script>
-
-      {/* <!-- contact js --> */}
-      <script src="./assets/js/contact.js"></script>
-      <script src="./assets/js/jquery.form.js"></script>
-      <script src="./assets/js/jquery.validate.min.js"></script>
-      <script src="./assets/js/mail-script.js"></script>
-      <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
-      {/* <!-- Jquery Plugins, main Jquery -->	 */}
-      <script src="./assets/js/plugins.js"></script>
-      <script src="./assets/js/main.js"></script>
-    </div>
+      <Footer/>
+    </>
   );
 }
+
