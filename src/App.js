@@ -5,13 +5,18 @@ import { Link } from "react-router-dom";
 import MainPage from "./MainPage/MainPage"
 import SingleBlog from "./SingleBlog/singleBlog"
 import NewsFeed from "./NewsFeed/NewsFeed";
+import AboutPage from "./aboutPage/aboutPage";
+import Contact from "./Contact/Contact"
+import Details from "./Details/Details"
 function App() {
   return (
     <div>
    {/* <Navbar />
       <Aggregator /> */}
-   {/* <SingleBlog /> */}
-   <MainPage />
+   <Details />
+   {/* <MainPage /> */}
+   {/* <AboutPage /> */}
+   {/* <Contact /> */}
     </div>
   );
 

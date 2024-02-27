@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Basic from "./component/Basic/Basic";
-import Blog from "./Blog/Blog";
+//import Blog from "./Blog/Blog";
 import Aggregator from "./Aggregator/Aggregator";
 import NewsFeed from "./NewsFeed/NewsFeed";
 import Social1 from "./Social1/Social1";
@@ -23,7 +23,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Basic" element={<Basic />} />
-        <Route path="/Blog" element={<Blog />} />
+        {/* <Route path="/Blog" element={<Blog />} /> */}
         <Route path="/Aggregator" element={<Aggregator />} />
         <Route path="/NewsFeed" element={<NewsFeed />} />
         <Route path="/Social1" element={<Social1 />} />

@@ -5103,11 +5103,11 @@ hr {
   display: block;
 }
 .contact-section {
-  padding: 130px 0 100px;
+  /* padding: 130px 0 100px; */
 }
 @media (max-width: 991px) {
   .contact-section {
-    padding: 70px 0 40px;
+    /* padding: 70px 0 40px; */
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

@@ -1,12 +1,18 @@
 // Navbar.js
 import React from "react";
-
-export default function Navbar() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
+/*
+1-- home
+2-- about 
+3-- Contact
+*/
+export default function Navbar(page) {
+  const { page: pageName } = page;
   return (
     <nav className="navbar navbar-expand-lg sticky-top pt-35 pb-3">
       <div className="container mb-2">
         <a className="navbar-brand" href="#">
-          {/* <img src={require("../assets/img/logo/logo2_footer.png")} alt="" /> */}
           <img src={require("../../assets/img/logo/logo2_footer.png")} alt="" />
         </a>
         <button
@@ -18,13 +24,19 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="fa-solid fa-bars"></i>
+          <i className="fa-solid">
+            {" "}
+            <FontAwesomeIcon
+              icon={faBars}
+              className=" fa-lg  rounded-circle p-2 "
+            />
+          </i>
         </button>
         <div className="collapse navbar-collapse" id="main">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a
-                className="nav-link p-lg-3 active"
+                className={`nav-link p-lg-3 ${pageName === 1 ? "active" : ""}`}
                 aria-current="page"
                 href="#"
               >
@@ -42,12 +54,15 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link p-lg-3" href="#">
+              <a
+                className={`nav-link p-lg-3 ${pageName === 2 ? "active" : ""}`}
+                href="#"
+              >
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link p-lg-3" href="#">
+              <a   className={`nav-link p-lg-3 ${pageName === 3 ? "active" : ""}`} href="#">
                 Contact
               </a>
             </li>

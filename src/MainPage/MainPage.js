@@ -5,7 +5,7 @@ import SingleBlog from "../SingleBlog/singleBlog"
 const MainPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar page={1}/>
       <Aggregator />
       <Footer />
     </>
