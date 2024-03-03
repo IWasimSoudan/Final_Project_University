@@ -1,6 +1,6 @@
-import Footer from "../component/Footer/Footer";
-import Navbar from "../component/Navbar/Navbar";
-import "../assets/css/test2.css";
+import Footer from "../../component/Footer/Footer";
+import Navbar from "../../component/Navbar/Navbar";
+import "../../assets/css/test2.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -23,7 +23,7 @@ const AboutPage = () => {
                 <div className="about-right mb-90">
                   <div className="about-img">
                     <img
-                      src={require("../assets/img/post/about_heor.jpg")}
+                      src={require("../../assets/img/post/about_heor.jpg")}
                       alt=""
                     />
                   </div>
@@ -168,7 +168,7 @@ const AboutPage = () => {
                 {/* <!-- New Poster --> */}
                 <div className="news-poster d-none d-lg-block">
                   <img
-                    src={require("../assets/img/news/news_card.jpg")}
+                    src={require("../../assets/img/news/news_card.jpg")}
                     alt=""
                   />
                 </div>

@@ -1,20 +1,20 @@
-import "../assets/css/bootstrap.min.css";
-import "../assets/css/slicknav.css";
-import "../assets/css/animate.min.css";
-import "../assets/css/magnific-popup.css";
-import "../assets/css/fontawesome-all.min.css";
-import "../assets/css/themify-icons.css";
-import "../assets/css/slick.css";
-import "../assets/css/nice-select.css";
-import "../assets/css/style.css";
-import "../assets/css/responsive.css";
-import Navbar from "../component/Navbar/Navbar";
-import Footer from "../component/Footer/Footer";
+import "../../assets/css/bootstrap.min.css";
+import "../../assets/css/slicknav.css";
+import "../../assets/css/animate.min.css";
+import "../../assets/css/magnific-popup.css";
+import "../../assets/css/fontawesome-all.min.css";
+import "../../assets/css/themify-icons.css";
+import "../../assets/css/slick.css";
+import "../../assets/css/nice-select.css";
+import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 export default function SingleBlog() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       {/* <!--================Blog Area =================--> */}
       <section className="blog_area single-post-area section-padding">
         <div className="container">
@@ -24,7 +24,7 @@ export default function SingleBlog() {
                 <div className="feature-img">
                   <img
                     className="img-fluid"
-                    src={require("../assets/img/blog/single_blog_1.png")}
+                    src={require("../../assets/img/blog/single_blog_1.png")}
                     alt=""
                   />
                 </div>
@@ -128,7 +128,7 @@ export default function SingleBlog() {
                         <a href="#">
                           <img
                             className="img-fluid"
-                            src={require("../assets/img/post/preview.png")}
+                            src={require("../../assets/img/post/preview.png")}
                             alt=""
                           />
                         </a>
@@ -161,7 +161,7 @@ export default function SingleBlog() {
                         <a href="#">
                           <img
                             className="img-fluid"
-                            src={require("../assets/img/post/next.png")}
+                            src={require("../../assets/img/post/next.png")}
                             alt=""
                           />
                         </a>
@@ -172,7 +172,10 @@ export default function SingleBlog() {
               </div>
               <div className="blog-author">
                 <div className="media align-items-center">
-                  <img src={require("../assets/img/blog/author.png")} alt="" />
+                  <img
+                    src={require("../../assets/img/blog/author.png")}
+                    alt=""
+                  />
                   <div className="media-body">
                     <a href="#">
                       <h4>Harvard milan</h4>
@@ -192,7 +195,7 @@ export default function SingleBlog() {
                     <div className="user justify-content-between d-flex">
                       <div className="thumb">
                         <img
-                          src={require("../assets/img/comment/comment_1.png")}
+                          src={require("../../assets/img/comment/comment_1.png")}
                           alt=""
                         />
                       </div>
@@ -225,7 +228,7 @@ export default function SingleBlog() {
                     <div className="user justify-content-between d-flex">
                       <div className="thumb">
                         <img
-                          src={require("../assets/img/comment/comment_2.png")}
+                          src={require("../../assets/img/comment/comment_2.png")}
                           alt=""
                         />
                       </div>
@@ -258,7 +261,7 @@ export default function SingleBlog() {
                     <div className="user justify-content-between d-flex">
                       <div className="thumb">
                         <img
-                          src={require("../assets/img/comment/comment_3.png")}
+                          src={require("../../assets/img/comment/comment_3.png")}
                           alt=""
                         />
                       </div>
@@ -586,8 +589,7 @@ export default function SingleBlog() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
-

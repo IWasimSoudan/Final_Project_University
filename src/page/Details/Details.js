@@ -1,6 +1,6 @@
-import Footer from "../component/Footer/Footer";
-import Navbar from "../component/Navbar/Navbar";
-import "../assets/css/style.css";
+import Footer from "../../component/Footer/Footer";
+import Navbar from "../../component/Navbar/Navbar";
+import "../../assets/css/style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -23,7 +23,7 @@ const Details = () => {
               <div className="about-right mb-90">
                 <div className="about-img">
                   <img
-                    src={require("../assets/img/trending/trending_top.jpg")}
+                    src={require("../../assets/img/trending/trending_top.jpg")}
                     alt=""
                   />
                 </div>

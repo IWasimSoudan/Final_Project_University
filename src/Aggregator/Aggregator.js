@@ -15,7 +15,7 @@ import {
 
 export default function Aggregator() {
   return (
-   <div>
+    <div>
       <MDBContainer className="py-5">
         <MDBRow className="gx-5 border-bottom pb-4 mb-5">
           <MDBCol md="6" className="mb-4">

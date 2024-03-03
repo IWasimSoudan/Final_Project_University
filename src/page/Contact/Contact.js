@@ -1,7 +1,7 @@
-import Footer from "../component/Footer/Footer";
-import Navbar from "../component/Navbar/Navbar";
-import "../assets/css/style.css";
- const contact = () => {
+import Footer from "../../component/Footer/Footer";
+import Navbar from "../../component/Navbar/Navbar";
+import "../../assets/css/style.css";
+const contact = () => {
   return (
     <>
       <div>
@@ -9,9 +9,11 @@ import "../assets/css/style.css";
         <div className="contact-section">
           <div className="container">
             <div className="container d-flex justify-content-center align-items-center mb-5 pb-4 ">
-
-            <img className="img-fluid" src={require("../assets/img/contactus.jpg")} alt="" />
-
+              <img
+                className="img-fluid"
+                src={require("../../assets/img/contactus.jpg")}
+                alt=""
+              />
             </div>
             <div className="row">
               <div className="col-12">
@@ -23,7 +25,7 @@ import "../assets/css/style.css";
                   action="contact_process.php"
                   method="post"
                   id="contactForm"
-                 // novalidate="novalidate"
+                  // novalidate="novalidate"
                 >
                   <div className="row">
                     <div className="col-12">
@@ -47,7 +49,7 @@ import "../assets/css/style.css";
                           name="name"
                           id="name"
                           type="text"
-                        //  onfocus="this.placeholder = ''"
+                          //  onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter your name'"
                           placeholder="Enter your name"
                         />
@@ -60,7 +62,7 @@ import "../assets/css/style.css";
                           name="email"
                           id="email"
                           type="email"
-                         // onfocus="this.placeholder = ''"
+                          // onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter email address'"
                           placeholder="Email"
                         />
@@ -73,7 +75,7 @@ import "../assets/css/style.css";
                           name="subject"
                           id="subject"
                           type="text"
-                        //  onfocus="this.placeholder = ''"
+                          //  onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter Subject'"
                           placeholder="Enter Subject"
                         />

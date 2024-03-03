@@ -6,6 +6,7 @@ import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 1-- home
 2-- about 
 3-- Contact
+4--SocialMedia
 */
 export default function Navbar(page) {
   const { page: pageName } = page;
@@ -38,31 +39,37 @@ export default function Navbar(page) {
               <a
                 className={`nav-link p-lg-3 ${pageName === 1 ? "active" : ""}`}
                 aria-current="page"
-                href="#"
+                href="/"
               >
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link p-lg-3" href="#">
-                Services
+              <a
+                className={`nav-link p-lg-3 ${pageName === 4 ? "active" : ""}`}
+                href="/socialmedia"
+              >
+                Social Media
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link p-lg-3" href="#">
                 Portfolio
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a
                 className={`nav-link p-lg-3 ${pageName === 2 ? "active" : ""}`}
-                href="#"
+                href="/about"
               >
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a   className={`nav-link p-lg-3 ${pageName === 3 ? "active" : ""}`} href="#">
+              <a
+                className={`nav-link p-lg-3 ${pageName === 3 ? "active" : ""}`}
+                href="contact"
+              >
                 Contact
               </a>
             </li>
