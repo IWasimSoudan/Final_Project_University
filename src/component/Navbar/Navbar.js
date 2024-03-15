@@ -7,6 +7,7 @@ import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 2-- about 
 3-- Contact
 4--SocialMedia
+5-- logIN
 */
 export default function Navbar(page) {
   const { page: pageName } = page;
@@ -77,7 +78,10 @@ export default function Navbar(page) {
           <div className="search ps-3 pe-3 d-none d-lg-block">
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
-          <a className="btn rounded-pill main-btn pt-4 pb-4" href="#">
+          <a
+            className={`btn rounded-pill main-btn pt-4 pb-4 ${pageName === 5 ? "active" : ""}`}
+            href="/login"
+          >
             Login
           </a>
         </div>

@@ -14,11 +14,8 @@ export default function Social1(posts) {
   return (
     <>
       {postData.map((post) => (
-        <MDBContainer
-          key={post.id}
-          className="col-md-6 align-items-center d-flex"
-        >
-          <MDBCard style={{ maxWidth: "42rem" }}>
+        <MDBContainer key={post.id} className="align-items-center d-flex">
+          <MDBCard style={{ maxWidth: "60rem" }}>
             <MDBCardBody>
               <div className="d-flex mb-3">
                 <a href="#!">

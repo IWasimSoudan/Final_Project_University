@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Responsive React News Feed templates built with Bootstrap 5. News article feed, instagram, facebook and twitter-like feed, posts with comments, social section & more.",
   "dependencies": {
+    "@coreui/icons-react": "^2.2.1",
+    "@coreui/react": "^4.11.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",

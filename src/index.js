@@ -10,6 +10,7 @@ import Aggregator from "./Aggregator/Aggregator";
 import AboutPage from "./page/aboutPage/aboutPage";
 import Contact from "./page/Contact/Contact";
 import SocialMedia from "./page/SocialMedia/SocialMedia";
+import LoginPage from "./page/LoginPage/LoginPage";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -24,6 +25,7 @@ root.render(
         <Route path="/Aggregator" element={<Aggregator />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/socialmedia" element={<SocialMedia />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
