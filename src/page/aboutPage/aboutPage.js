@@ -14,10 +14,11 @@ const AboutPage = () => {
               <div className="col-lg-8">
                 {/* <!-- Trending Tittle --> */}
                 <div className="about-right mb-90">
-                  <div className="about-img">
+                  <div className="about-img ">
                     <img
                       src={require("../../assets/img/post/about_heor.jpg")}
                       alt=""
+                      style={{ maxWidth: "100%", height: "auto" }}
                     />
                   </div>
                   <div className="section-tittle mb-30 pt-30">
